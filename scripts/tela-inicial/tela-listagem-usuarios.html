@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <link rel="stylesheet" href="tela-listagem-usuarios.css">
+
     <!--Chamando Angularjs:-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="node_modules/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
@@ -41,6 +42,7 @@
 
     <main>
         <form action="">
+        <scroll-container>
         <table class="table table-bordered">
             <thead>
               <tr>
@@ -51,10 +53,14 @@
                 <th scope="col">Peso</th>
                 <th scope="col">Aniversário</th>
                 <th scope="col">d</th>
+               
+                 
+              
 
               </tr>
             </thead>
             <tbody>
+                
               <tr>
                 <th scope="row">1</th>
                 <td>Mark</td>
@@ -63,7 +69,7 @@
                 <td>Otto</td>
                 <td>dados</td>
                 <td><button>Editar</button><button>apagar</button></td>
-                
+               
               </tr>
               <tr>
                 <th scope="row">2</th>
@@ -82,18 +88,20 @@
                 <td>ok</td>
                 <td></td>
                 
+                
               </tr>
 
               <tr>
                   <th scope="row">4</th>
                   <td >Larry the Bird</td>
                   <td>@twitter</td>
-                  <td>ok</td>     <!-- escreve na linha seguiinte -->
+                  <td>ok</td>     <!-- escreve na linha seguiinte, ouseja pula para linha seguinte da coluna -->
                   <td>ok</td>
                   <td></td>
               </tr>
             </tbody>
           </table>
+        </scroll-container>
         </form>
     </main>
 </body>
