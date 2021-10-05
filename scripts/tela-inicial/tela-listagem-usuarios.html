@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="listagemUsuarios">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!--Chamando Angularjs:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="node_modules/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script>
+    <script src="../../scripts/controllers/main.js"></script>
+
+    <!--Chamando o Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
     <title>Usuarios</title>
 </head>
-<body>
-    
+<body ng-controller="controleUsuarios">
+    <header>
+        <div id=tituloHeader>
+            <h3>Só Vamu Tech!</h3>
+            {{titulo}}
+        </div>
+    </header>
+
+    <nav>
+        <button>
+            Cadastrar
+        </button>
+    </nav>
+  
+
+    <main>
+        <form action="">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">Cidade de Nascimento</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Aniversário</th>
+                <th scope="col">d</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td>dados</td>
+                <td><button>Editar</button><button>apagar</button></td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Otto</td>
+                <td></td>
+               
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td >Larry the Bird</td>
+                <td>@twitter</td>
+                 <td>ok</td>     <!-- escreve na linha seguiinte -->
+                <td>ok</td>
+                <td></td>
+                
+              </tr>
+
+              <tr>
+                  <th scope="row">4</th>
+                  <td >Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>ok</td>     <!-- escreve na linha seguiinte -->
+                  <td>ok</td>
+                  <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+    </main>
 </body>
 </html>
