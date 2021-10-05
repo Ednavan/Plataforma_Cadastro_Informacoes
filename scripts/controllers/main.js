@@ -1,3 +1,3 @@
-angular.module("listagemUsuarios", []).controller("controleUsuarios", function ($scope){
-    $scope.titulo="boa noite";
+angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($scope){
+    $scope.titulo="Angularjs sendo executado";
 });
