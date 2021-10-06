@@ -22,6 +22,36 @@
     <title>Document</title>
 </head>
 <body ng-controller="controleUsuarios">
-    {{titulo}}
+    <header>
+        <div id=tituloHeader>
+            <h3>Só Vamu Tech!</h3>
+            {{titulo}}
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <label for="inputNome">Nome</label>
+            <input id="inputNome" name="inputNome" type="text" >
+            <label for="inputIdade">Idade</label>
+            <input id="inputIdade" name="inputIdade" type="text">
+            <label for="selectProfissao">Profissao</label>
+            <select name="selectProfissao" SIZE=1>
+                <option value="">select</option>
+                <option value="">teste1</option>
+            </select>
+            <label for="selectCidadeNascimento">Cidade de Nascimento</label>
+            <select name="selectCidadeNascimento" SIZE=1>
+                <option value="">select</option>
+                <option value="">teste1</option>
+            </select>
+            <label for="inputPeso">Peso</label>
+            <input id="inputPeso" name="inputPeso" type="text">
+            <label for="selectDataAniversario">Aniversário</label>
+            <input id="selectDataAniversario" type="date">
+            <button>Salvar</button>
+            <button>Voltar</button>
+        </form>
+    </main>
 </body>
 </html>
