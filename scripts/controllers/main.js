@@ -19,4 +19,22 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         $scope.listagemUsuarios = res.data
     })
 
+    
+    $scope.alterando = function(lista){
+        $scope.alterando = lista;
+        console.log($scope.alterando)
+    }
+
+    $scope.editardados = function(){
+        $http({
+            url: 'http://localhost:3000/listagemUsuarios' + $scope.alterando.id,
+            data: $scope.alterando,
+            method: "PATCH"
+
+        }).then(function(tratandodados){
+            console.log("success")
+            console.log(tratandodados)
+        })
+    }
+
 });

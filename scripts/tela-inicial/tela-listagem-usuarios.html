@@ -34,19 +34,17 @@
         </div>
     </header>
 
-    <nav>
-        <button onclick='window.open("../../scripts/tela-cadastro/tela-cadastro-usuarios.html")' type="button"><a href="../../scripts/tela-cadastro/tela-cadastro-usuarios.html">
-            Cadastrar
-        </button>
-    </nav>
+    <button onclick='window.open("../../scripts/tela-cadastro/tela-cadastro-usuarios.html")' ><a href="../../scripts/tela-cadastro/tela-cadastro-usuarios.html"></a>Cadastrar</button>
   
 
     <main>
-        <form action="">
-        <scroll-container>
-        <table class="table table-bordered">
+        <form >
+      
+        <table class="table table-bordered" >
+         
             <thead>
               <tr>
+                
                 <th scope="col">Nome</th>
                 <th scope="col">Idade</th>
                 <th scope="col">Profissão</th>
@@ -55,33 +53,38 @@
                 <th scope="col">Aniversário</th>
                 <th scope="col"></th>
               </tr>
+            
             </thead>
-            <tbody >
-                
-              <tr ng-repeat="lista in listagemUsuarios">
+         
+            <tbody id="scrollinterno"  >
+  
+              <tr ng-repeat="lista in listagemUsuarios" >
                 <td>{{lista.nome}}</td>
                 <td>{{lista.idade}}</td>
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>{{lista.peso}}</td>
                 <td>data de Aniversário</td>
-                <td><button>Editar</button><button>apagar</button></td>
-               
+                <td><button  ng-click="alterando(lista)">Editar</button><button>apagar</button></td>
+                
               </tr>
+              
               <tr>
                 <td>{{lista.nome}}</td>
                 <td>{{lista.idade}}</td>
                 <td>Thornton</td>
-                <td>@fat</td>
-                <td>{{lista.peso}}</td>
-                <td></td>
-               
+                  <td>@fat</td>
+                  <td>{{lista.peso}}</td>
+                  <td></td>
+                  
+                
               </tr>
               <tr>
+               
                 <td>{{lista.nome}}</td>
                 <td >{{lista.idade}}</td>
                 <td>@twitter</td>
-                 <td>ok</td>     <!-- escreve na linha seguiinte -->
+                <td>ok</td>     <!-- escreve na linha seguiinte -->
                 <td>{{lista.peso}}</td>
                 <td></td>
                 
@@ -96,10 +99,12 @@
                   <td></td>
                   <td></td>
               </tr> -->
+           
             </tbody>
           </table>
-        </scroll-container>
+    
         </form>
-    </main>
+     
+    </main>    
 </body>
 </html>

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-a {
+ /* a {
     display: inline-block;
     width: 50px;
     text-decoration: none;
@@ -12,27 +12,34 @@ a {
     margin: 0 auto;
     text-align: center;
   }
-  /* nav {
-    width: 339px;
-    padding: 5px;
-    border: 1px solid black;
-  } */
+
   scroll-container {
     display: block;
-    width: 1250px;
+    max-width: 100%;
     height: 200px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-  }
-  scroll-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
-  }
+  } 
+  */
 
 
 #tituloHeader{
     text-align: center;
 }
+/* 
+.table-bordered{
+background: brown;
+ 
+display: list-item;
+}
+
+#scrollinterno{
+ 
+  display: block ;
+
+  background: blue;
+  
+  height: 200px; 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
