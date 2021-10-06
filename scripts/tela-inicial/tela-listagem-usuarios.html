@@ -56,46 +56,46 @@
                 <th scope="col"></th>
               </tr>
             </thead>
-            <tbody>
+            <tbody >
                 
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
+              <tr ng-repeat="lista in listagemUsuarios">
+                <td>{{lista.nome}}</td>
+                <td>{{lista.idade}}</td>
                 <td>Otto</td>
                 <td>@mdo</td>
-                <td>Otto</td>
-                <td>dados</td>
+                <td>{{lista.peso}}</td>
+                <td>data de Aniversário</td>
                 <td><button>Editar</button><button>apagar</button></td>
                
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
+                <td>{{lista.nome}}</td>
+                <td>{{lista.idade}}</td>
                 <td>Thornton</td>
                 <td>@fat</td>
-                <td>Otto</td>
+                <td>{{lista.peso}}</td>
                 <td></td>
                
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td >Larry the Bird</td>
+                <td>{{lista.nome}}</td>
+                <td >{{lista.idade}}</td>
                 <td>@twitter</td>
                  <td>ok</td>     <!-- escreve na linha seguiinte -->
-                <td>ok</td>
+                <td>{{lista.peso}}</td>
                 <td></td>
                 
                 
               </tr>
 
-              <tr>
-                  <th scope="row">4</th>
-                  <td >Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>ok</td>     <!-- escreve na linha seguiinte, ouseja pula para linha seguinte da coluna -->
-                  <td>ok</td>
+              <!-- <tr>
+                  <th></th>
                   <td></td>
-              </tr>
+                  <td></td>
+                  <td></td>     escreve na linha seguiinte, ouseja pula para linha seguinte da coluna
+                  <td></td>
+                  <td></td>
+              </tr> -->
             </tbody>
           </table>
         </scroll-container>

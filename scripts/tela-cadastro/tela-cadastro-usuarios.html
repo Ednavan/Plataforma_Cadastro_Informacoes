@@ -41,9 +41,9 @@
     <main>
         <form action="">
             <label for="inputNome">Nome</label>
-            <input id="inputNome" name="inputNome" type="text" >
+            <input id="inputNome" ng-model="data.nome" name="inputNome" type="text" >
             <label for="inputIdade">Idade</label>
-            <input id="inputIdade" name="inputIdade" type="text">
+            <input id="inputIdade" ng-model="data.idade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
             <select name="selectProfissao" SIZE=1>
                 <option value="">select</option>
@@ -55,10 +55,10 @@
                 <option value="">teste1</option>
             </select>
             <label for="inputPeso">Peso</label>
-            <input id="inputPeso" name="inputPeso" type="text">
+            <input id="inputPeso" ng-model="data.peso" name="inputPeso" type="text">
             <label for="selectDataAniversario">Aniversário</label>
             <input id="selectDataAniversario" type="date">
-            <button>Salvar</button>
+            <button type="button" ng-click="enviodedados()">Salvar</button>
             <button>Voltar</button>
         </form>
     </main>
