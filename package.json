@@ -1,0 +1,25 @@
+{
+  "name": "Plataforma_Cadastro_Informacoes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+    
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ednavan/Plataforma_Cadastro_Informacoes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ednavan/Plataforma_Cadastro_Informacoes/issues"
+  },
+  "homepage": "https://github.com/Ednavan/Plataforma_Cadastro_Informacoes#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
