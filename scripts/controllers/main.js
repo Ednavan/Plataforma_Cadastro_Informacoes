@@ -20,23 +20,31 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         })
 
 
-    $scope.alterando = function (lista) {
-        $scope.verifica = lista;
-        console.log('edit', $scope.verifica)
 
-    }
+       
+  $scope.alterando = function (lista) {
+    $scope.verifica = lista;
+    console.log('edit', $scope.verifica)
+    localStorage.setItem('test',JSON.stringify($scope.verifica))
 
-    // $scope.finalizandoEdit = function () {
-    //     alert("1");
-    //     console.log('edit2', $scope.verifica)
+    
+}
 
-    // }
+$scope.finalizandoEdit = function () {
+
+console.log('edit2', $scope.verifica)
+var ok = localStorage.getItem('test');
+console.log(ok)
+
+ok = JSON.parse(ok);
+
+
 
     $scope.enviardados = function () {
-        console.log('executando dentro da funcao enviardados', $scope.verifica)
+        console.log('executando dentro da funcao enviardados', $scope.ok)
         $http({
-            url: "http://localhost:3000/listagemUsuarios" + $scope.verifica, //seleciona o dados atraves do id
-            data: $scope.verifica, //envia os dados atraves do seu conjunto    
+            url: "http://localhost:3000/listagemUsuarios" + $scope.ok.id, //seleciona o dados atraves do id
+            data: $scope.ok, //envia os dados atraves do seu conjunto    
             method: "PATCH", //é mais importante é responsável pela ação do método
 
         }).then(function (tratamento) {
@@ -50,6 +58,7 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         })
 
     }
+}
 
 });
 

@@ -11,6 +11,12 @@
       "idade": "22",
       "peso": "1.111 kg",
       "id": 2
+    },
+    {
+      "nome": "teste3",
+      "idade": "23",
+      "peso": "12 kg",
+      "id": 3
     }
   ]
 }
