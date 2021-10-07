@@ -43,3 +43,8 @@ display: list-item;
     overflow-y: scroll;
     scroll-behavior: smooth;
 } */
+
+.modal-title{
+  text-align: center;
+  padding-left: 50px;
+}

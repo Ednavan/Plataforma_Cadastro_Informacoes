@@ -7,7 +7,7 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         url:'http://localhost:3000/listagemUsuarios',
         method: 'POST',
         data: $scope.data,
-        'Content-Type': 'application/json'
+       
     }).then(function(){
 
    
@@ -19,22 +19,35 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         $scope.listagemUsuarios = res.data
     })
 
+
     
     $scope.alterando = function(lista){
-        $scope.alterando = lista;
-        console.log($scope.alterando)
+        $scope.verifica = lista;
+        console.log('edit', $scope.verifica)
+    
     }
-
-    $scope.editardados = function(){
+    
+    $scope.enviardados = function () {
+        console.log('executando dentro da funcao enviardados', $scope.verifica)
         $http({
-            url: 'http://localhost:3000/listagemUsuarios' + $scope.alterando.id,
-            data: $scope.alterando,
-            method: "PATCH"
+            url: "http://localhost:3000/listagemUsuarios" + $scope.verifica, //seleciona o dados atraves do id
+            data: $scope.verifica, //envia os dados atraves do seu conjunto    
+            method: "PATCH", //é mais importante é responsável pela ação do método
 
-        }).then(function(tratandodados){
-            console.log("success")
-            console.log(tratandodados)
+        }).then(function (tratamento) {
+            console.log("SUCCESS");
+            console.log(tratamento)
+
+           
+            
+
+        }).catch(function () {
+            console.log("chegou aqui");
+           
         })
+
     }
+
+
 
 });
