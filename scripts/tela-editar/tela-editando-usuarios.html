@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="aplicacaoRun">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-     <!--Chamando Angularjs:-->
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-     <script src="../../scripts/controllers/main.js"></script>
-     <script src="../tela-editar/tela-editando-usuarios.js"></script>
-     <!--Chamando o Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-         crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <!--Chamando Angularjs:-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../../scripts/controllers/main.js"></script>
+    <script src="../controllers/jquery.mask.js"></script>
+    <script src="tela-editando-usuarios.js"></script>
+    <!--Chamando o Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
 
     <title>Document</title>
 </head>
+
 <body ng-controller="controleUsuarios">
     <header>
         <div id=tituloHeader>
@@ -32,7 +38,7 @@
     <main>
         <form>
             <label for="inputNome">Nome</label>
-            <input ng-model="verifica.nome" id="inputNome" name="inputNome" type="text" >
+            <input  id="inputNome" name="inputNome" type="text">
             <label for="inputIdade">Idade</label>
             <input id="inputIdade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
@@ -45,13 +51,14 @@
                 <option value="">select</option>
                 <option value="">teste1</option>
             </select>
-            <label for="inputPeso">Peso</label>
-            <input id="inputPeso" name="inputPeso" type="text">
+            <label  for="inputPeso">Peso</label>
+            <input id="inputPeso"  name="inputPeso" type="text">
             <label for="selectDataAniversario">Aniversário</label>
             <input id="selectDataAniversario" type="date">
-           <tr><button ng-click="alterando(lista.id)">Salvar</button></tr>
+            <tr><button ng-click="alterando()">Salvar</button></tr>
             <button>Voltar</button>
         </form>
     </main>
 </body>
+
 </html>

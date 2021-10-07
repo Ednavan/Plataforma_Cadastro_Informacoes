@@ -48,3 +48,7 @@ display: list-item;
   text-align: center;
   padding-left: 50px;
 }
+
+#modalexcluirUsuario{
+  margin-top: 150px;
+}
