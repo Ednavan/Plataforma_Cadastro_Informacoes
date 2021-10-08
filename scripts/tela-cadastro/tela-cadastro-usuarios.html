@@ -48,10 +48,9 @@
             <label for="inputIdade">Idade</label>
             <input id="inputIdade" ng-model="data.idade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
-            <select name="selectProfissao" SIZE=1>
-                <option value="">select</option>
-                <option value="">teste1</option>
-            </select>
+            <select name="repeatSelect" id="repeatSelect" ng-model="data.model">
+                <option ng-repeat="option in data.availableOptions" value="{{option.id}}">{{option.name}}</option>
+              </select>
             <label for="selectCidadeNascimento">Cidade de Nascimento</label>
             <select name="selectCidadeNascimento" SIZE=1>
                 <option value="">select</option>
@@ -64,6 +63,7 @@
             <button type="button" ng-click="enviodedados()" onclick="location.href=document.referrer">Salvar</button>
             <button>Voltar</button>
         </form>
+        
     </main>
 </body>
 

@@ -1,23 +1,60 @@
 {
   "listagemUsuarios": [
     {
-      "nome": "vv",
-      "idade": "88",
-      "peso": "5",
+      "model": "",
+      "availableOptions": [
+        {
+          "name": "Desenvolvedor Front-End"
+        },
+        {
+          "name": "Desenvolvedor Back-End"
+        },
+        {
+          "name": "Desenvolvedor Full-Stak"
+        }
+      ],
+      "nome": "testr",
+      "idade": "1",
+      "peso": "1 kg",
+      "aniversario": "2021-10-03T03:00:00.000Z",
       "id": 1
     },
     {
-      "nome": "ee",
-      "idade": "22",
-      "peso": "1 kg",
+      "model": "",
+      "availableOptions": [
+        {
+          "name": "Desenvolvedor Front-End"
+        },
+        {
+          "name": "Desenvolvedor Back-End"
+        },
+        {
+          "name": "Desenvolvedor Full-Stak"
+        }
+      ],
+      "nome": "ff",
+      "idade": "11",
+      "peso": "3 kg",
       "aniversario": "2021-10-03T03:00:00.000Z",
       "id": 2
     },
     {
-      "nome": "asda",
-      "idade": "23",
-      "peso": "2 kg",
-      "aniversario": "2021-10-06T03:00:00.000Z",
+      "model": "",
+      "availableOptions": [
+        {
+          "name": "Desenvolvedor Front-End"
+        },
+        {
+          "name": "Desenvolvedor Back-End"
+        },
+        {
+          "name": "Desenvolvedor Full-Stak"
+        }
+      ],
+      "nome": "kk",
+      "idade": "4",
+      "peso": "1 kg",
+      "aniversario": "2021-10-03T03:00:00.000Z",
       "id": 3
     }
   ]
