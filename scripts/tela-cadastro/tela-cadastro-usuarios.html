@@ -32,7 +32,7 @@
             <label for="inputNome">Nome</label>
             <input id="inputNome" ng-model="data.nome" ng-minlength="3" name="inputNome" type="text" required>
             <label for="inputIdade">Idade</label>
-            <input id="inputIdade" ng-model="data.idade" name="inputIdade" type="text" required>
+            <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
             <label for="selectProfissao">Profissao</label>
             <select ng-options="listagemdepessoas for listagemdepessoas in definindoProfiss" ng-model="data.profissao">
             </select>
