@@ -55,7 +55,7 @@
             <td>{{lista.profissao}}</td>
             <td>{{lista.nascimento}}</td>
             <td>{{lista.peso}}</td>
-            <td>{{lista.aniversario}}</td>
+            <td>{{lista.aniversario | date:'dd/MM/yyyy'}}</td>
             <td>
               <button type="button" onclick='window.open("../../scripts/tela-editar/tela-editando-usuarios.html")'
                 ng-click="alterando(lista)">
