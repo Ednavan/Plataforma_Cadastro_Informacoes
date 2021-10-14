@@ -73,9 +73,6 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         success: function (data) {
 
             $scope.megaCity = data;
-
-
-
         }
     });
 
@@ -86,15 +83,7 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         dataType: 'json',
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-            // var selectbox = $('#ddlTipoTelefone');
-            // $.each(data, function (i, d) {
-            //     selectbox.append('<option value="' + d.tipoId+ '">' + d.name + '</option>');
-            // });
-
             $scope.definindoProfiss = data;
-
-
-
         }
     });
 

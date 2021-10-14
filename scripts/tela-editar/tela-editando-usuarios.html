@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
     <!--Chamando Angularjs:-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="../../scripts/controllers/main.js"></script>
@@ -21,20 +19,15 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    
 
     <title>Document</title>
 </head>
-
 <body ng-controller="controleUsuarios">
     <header>
         <div id=tituloHeader>
             <h3>Só Vamu Tech!</h3>
-   
         </div>
     </header>
-
     <main>
         <form >
             <label for="inputNome">Nome</label>
@@ -43,11 +36,9 @@
             <input id="inputIdade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
             <select   ng-options="listagemdepessoas for listagemdepessoas in definindoProfiss" ng-model="data.profissao">
-             
             </select>
             <label for="selectCidadeNascimento">Cidade de Nascimento</label>
             <select   ng-options="listagemdecidades for listagemdecidades in megaCity" ng-model="data.nascimento">
-       
             </select>
             <label  for="inputPeso">Peso</label>
             <input id="inputPeso"  name="inputPeso" type="text">
@@ -56,6 +47,7 @@
             <tr><button ng-click="finalizandoEdit(ok)">Salvar</button></tr>
             <button>Voltar</button>
         </form>
+
     </main>
 </body>
 
