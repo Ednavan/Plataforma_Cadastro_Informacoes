@@ -29,11 +29,11 @@
         </div>
     </header>
     <main>
-        <form >
+        <form>
             <label for="inputNome">Nome</label>
-            <input  id="inputNome"  name="inputNome"  ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" type="text" required>
+            <input  id="inputNome"  name="inputNome"  ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" type="text">
             <label for="inputIdade">Idade</label>
-            <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
+            <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
             <select   ng-options="listagemdepessoas for listagemdepessoas in definindoProfiss" ng-model="data.profissao">
             </select>
@@ -44,8 +44,8 @@
             <input id="inputPeso"  name="inputPeso" type="text">
             <label for="selectDataAniversario">Aniversário</label>
             <input id="selectDataAniversario" type="date">
-            <tr><button ng-click="finalizandoEdit(ok)">Salvar</button></tr>
-            <button>Voltar</button>
+            <tr><button ng-click="finalizandoEdit(ok)" onclick="location.href=document.referrer">Salvar</button></tr>
+            <button onclick="location.href=document.referrer">Voltar</button>
         </form>
 
     </main>
