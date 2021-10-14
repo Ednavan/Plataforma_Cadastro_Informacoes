@@ -8,6 +8,13 @@
       "peso": "1 kg",
       "aniversario": "2021-10-23T03:00:00.000Z",
       "id": 1
+    },
+    {
+      "nome": "d",
+      "id": 2
+    },
+    {
+      "id": 3
     }
   ],
   "cidadesquenasceu": [

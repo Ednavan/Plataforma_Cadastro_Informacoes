@@ -102,5 +102,3 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
 });
 
 
-
-
