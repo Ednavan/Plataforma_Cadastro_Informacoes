@@ -8,6 +8,15 @@
       "peso": "1 kg",
       "aniversario": "2021-10-23T03:00:00.000Z",
       "id": 1
+    },
+    {
+      "nome": "Aedy",
+      "idade": "99",
+      "profissao": "Engenheiro",
+      "nascimento": "Rio de Janeiro",
+      "peso": "2,23 kg",
+      "aniversario": "2018-03-14T03:00:00.000Z",
+      "id": 2
     }
   ],
   "cidadesquenasceu": [

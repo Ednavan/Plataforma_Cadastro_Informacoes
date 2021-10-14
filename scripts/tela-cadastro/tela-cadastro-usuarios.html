@@ -30,7 +30,7 @@
     <main>
         <form name="customerForm" class="form-control">
             <label for="inputNome">Nome</label>
-            <input id="inputNome" ng-model="data.nome" ng-minlength="3" name="inputNome" type="text" required>
+            <input id="inputNome" ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" name="inputNome" type="text" required>
             <label for="inputIdade">Idade</label>
             <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
             <label for="selectProfissao">Profissao</label>
