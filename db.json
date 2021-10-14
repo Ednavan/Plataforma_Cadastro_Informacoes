@@ -1,39 +1,15 @@
 {
   "listagemUsuarios": [
-    {
-      "nome": "222",
-      "idade": "2",
-      "nascimento": null,
-      "peso": "343 kg",
-      "aniversario": "2021-10-22T03:00:00.000Z",
-      "id": 1
-    },
-    {
-      "nome": "ddd",
-      "idade": "d",
-      "nascimento": null,
-      "peso": "33 kg",
-      "aniversario": "2021-10-21T03:00:00.000Z",
-      "id": 2
-    },
-    {
-      "ddlTipoTelefone": null,
-      "nome": "ddd",
-      "idade": "3",
-      "peso": "1 kg",
-      "aniversario": "2021-10-22T03:00:00.000Z",
-      "id": 3
-    },
-    {
-      "nome": "dfdsfsdfdsfdsfsdfsd",
-      "idade": "fsdfdsfsdfsdfsdf",
-      "nascimento": "Campina Grande",
-      "peso": "3333.333 kg",
-      "aniversario": "2021-10-30T03:00:00.000Z",
-      "id": 4
-    }
+    
   ],
   "cidadesquenasceu": [
-    "Campina Grande"
+    "Campina Grande",
+    "São Paulo",
+    "Rio de Janeiro"
+  ],
+  "profissaoDePessoas": [
+    "Desenvolvedor Front-End",
+    "Desenvolvedor Back-End",
+    "Engenheiro"
   ]
 }

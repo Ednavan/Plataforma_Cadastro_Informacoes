@@ -82,6 +82,24 @@ $.ajax({
 
 } });
 
+$.ajax({
+    type: "get",
+    url: "http://localhost:3000/profissaoDePessoas",
+    data: { tipos: $("#ddlTipoTelefone").val() },
+    dataType: 'json',
+    contentType: "application/json; charset=utf-8",
+    success: function (data) {
+            // var selectbox = $('#ddlTipoTelefone');
+            // $.each(data, function (i, d) {
+            //     selectbox.append('<option value="' + d.tipoId+ '">' + d.name + '</option>');
+            // });
+     
+        $scope.definindoProfiss = data;
+
+
+
+} });
+
 });
 
 
