@@ -31,9 +31,9 @@
     <main>
         <form >
             <label for="inputNome">Nome</label>
-            <input  id="inputNome" name="inputNome" type="text">
+            <input  id="inputNome"  name="inputNome"  ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" type="text" required>
             <label for="inputIdade">Idade</label>
-            <input id="inputIdade" name="inputIdade" type="text">
+            <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
             <label for="selectProfissao">Profissao</label>
             <select   ng-options="listagemdepessoas for listagemdepessoas in definindoProfiss" ng-model="data.profissao">
             </select>
