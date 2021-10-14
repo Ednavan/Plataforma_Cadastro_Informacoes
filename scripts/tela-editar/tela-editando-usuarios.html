@@ -29,9 +29,9 @@
         </div>
     </header>
     <main>
-        <form>
+        <form name="customerForm">
             <label for="inputNome">Nome</label>
-            <input  id="inputNome"  name="inputNome"  ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" type="text">
+            <input  id="inputNome"  name="inputNome" ng-class="error"  ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" type="text">
             <label for="inputIdade">Idade</label>
             <input id="inputIdade" ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text">
             <label for="selectProfissao">Profissao</label>
@@ -44,7 +44,7 @@
             <input id="inputPeso"  name="inputPeso" type="text">
             <label for="selectDataAniversario">Aniversário</label>
             <input id="selectDataAniversario" type="date">
-            <tr><button ng-click="finalizandoEdit(ok)" onclick="location.href=document.referrer">Salvar</button></tr>
+            <tr><button ng-click="finalizandoEdit(ok)" onclick="location.href=document.referrer" ng-disabled="customerForm.$invalid">Salvar</button></tr>
             <button onclick="location.href=document.referrer">Voltar</button>
         </form>
 
