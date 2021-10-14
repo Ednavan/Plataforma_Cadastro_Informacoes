@@ -33,7 +33,7 @@
     <header>
         <div id=tituloHeader>
             <h3>Só Vamu Tech!</h3>
-            {{titulo}}
+          
         </div>
     </header>
 
@@ -51,10 +51,9 @@
             <select name="repeatSelect" id="repeatSelect" ng-model="data.model">
                 <option ng-repeat="option in data.availableOptions" value="{{option.id}}">{{option.name}}</option>
               </select>
-            <label for="selectCidadeNascimento">Cidade de Nascimento</label>
-            <select name="selectCidadeNascimento" SIZE=1>
-                <option value="">select</option>
-                <option value="">teste1</option>
+            <label >Cidade de Nascimento</label>
+            <select   ng-options="listagemdecidades for listagemdecidades in megaCity" ng-model="data.nascimento">
+                
             </select>
             <label for="inputPeso">Peso</label>
             <input id="inputPeso" ng-model="data.peso" name="inputPeso" type="text">

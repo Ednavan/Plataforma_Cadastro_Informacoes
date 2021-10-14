@@ -2,17 +2,14 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
     $scope.titulo = "Angularjs sendo executado";
 
     $scope.data = {
-        model: null,
-        availableOptions: [
-            { name: 'Desenvolvedor Front-End'},
-            { name: 'Desenvolvedor Back-End'},
-            { name: 'Desenvolvedor Full-Stak'}
-          ]};
+
+   };
     $scope.enviodedados = function () {
         $http({
             url: 'http://localhost:3000/listagemUsuarios',
             method: 'POST',
             data: $scope.data,
+            
             
         }).then(function () {
 
@@ -62,9 +59,28 @@ ok = JSON.parse(ok);
             console.log("chegou aqui");
 
         })
+        
 
     }
+    
 }
+$.ajax({
+    type: "get",
+    url: "http://localhost:3000/cidadesquenasceu",
+    data: { tipos: $("#ddlTipoTelefone").val() },
+    dataType: 'json',
+    contentType: "application/json; charset=utf-8",
+    success: function (data) {
+            // var selectbox = $('#ddlTipoTelefone');
+            // $.each(data, function (i, d) {
+            //     selectbox.append('<option value="' + d.tipoId+ '">' + d.name + '</option>');
+            // });
+     
+        $scope.megaCity = data;
+
+
+
+} });
 
 });
 
@@ -86,3 +102,7 @@ $('.peso').keyup(function () {
 
     this.value = v;
 });
+
+
+
+
