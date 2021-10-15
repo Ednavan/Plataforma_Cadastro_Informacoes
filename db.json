@@ -1,15 +1,6 @@
 {
   "listagemUsuarios": [
     {
-      "nome": "teste",
-      "idade": "23",
-      "profissao": "Desenvolvedor Front-End",
-      "nascimento": "Campina Grande",
-      "peso": "1 kg",
-      "aniversario": "2021-10-23T03:00:00.000Z",
-      "id": 1
-    },
-    {
       "nome": "Aedy",
       "idade": "99",
       "profissao": "Engenheiro",
@@ -17,6 +8,15 @@
       "peso": "2,23 kg",
       "aniversario": "2018-03-14T03:00:00.000Z",
       "id": 2
+    },
+    {
+      "nome": "Fulano",
+      "idade": "98",
+      "profissao": "Engenheiro",
+      "nascimento": "São Paulo",
+      "peso": "21 kg",
+      "aniversario": "2021-10-16T03:00:00.000Z",
+      "id": 3
     }
   ],
   "cidadesquenasceu": [

@@ -35,9 +35,7 @@
 
       <div>
         <input id="barraPesquisa" class="form-control" type="search" aria-label="Search">
-        
         <i class="fa fa-search"></i>
-        
       </div>
   </nav>
   <main>
@@ -64,13 +62,14 @@
             <td>{{lista.aniversario | date:'dd/MM/yyyy'}}</td>
             <td>
               <button id="editarInfo" class="btn btn-primary" type="button" onclick='window.open("../../scripts/tela-editar/tela-editando-usuarios.html")'
-                ng-click="alterando(lista)">
+               >
                 <a href="../../scripts/tela-editar/tela-editando-usuarios.html"></a>
                 Editar  
               </button>
-              <button id="apagarInfo" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalexcluirUsuario">
+              <button  id="apagarInfo" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalexcluirUsuario"  ng-click="deletandodados(lista)">
                 apagar
               </button>
+         
             </td>
           </tr>
         </tbody>
@@ -88,7 +87,7 @@
         </div>
         <div class="footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Excluir</button>
+          <button type="button" class="btn btn-primary" ng-click="analisa(lista)">Excluir</button>
         </div>
       </div>
     </div>

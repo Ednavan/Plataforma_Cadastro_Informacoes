@@ -1,0 +1,43 @@
+ *{
+        margin: 0;
+        padding: 0;
+ }
+
+#tituloHeader{
+    background: #8B008B;
+    color: #FFFAFA;
+    padding: 8px;
+    height: 60px ;
+    margin-bottom: 5%;
+    text-align: center;
+  
+  }
+
+ #inputNome{
+    width: 250px;
+   display: block;
+    
+ }
+
+ .labelIdade{
+    position: absolute;
+    margin-left: 350px;
+    top: 130px;
+    max-block-size: none;
+
+    
+}
+
+#inputIdade{
+     margin-left: 5px;
+     width: 250px;
+     position: absolute;
+     margin-left: 350px;
+     top: 150px;
+}
+
+.labelProfissao{
+    display: block;
+ 
+}
+
