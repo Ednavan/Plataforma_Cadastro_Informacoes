@@ -82,12 +82,21 @@ display: list-item;
   background: #8B008B;
   position: absolute;
   left: 90%;
+  font-family: Optima, sans-serif;
 }
 
-#editarInfo , #apagarInfo{
+#editarInfo , #apagarInfo {
   background: #8B008B;
+  font-family: sOptima, sans-serif;
 }
 
 #preenchimentoTabela{
-  margin: 50px;
+  margin-top: 50px;
+  width: 100%;
+  font-family: Snell Roundhand, cursive;
+}
+
+#menuDaTabela{
+  background:#4F4F4F;
+  color: #FFFAFA ;
 }
