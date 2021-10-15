@@ -31,21 +31,45 @@
         </div>
     </header>
     <main>
-        <form name="customerForm" >
-            <label class="labelNome" for="inputNome">Nome</label>
+        <form id="FormeCadastro"  name="customerForm" >
+            <div class="row">
+            <div class="col col-sm-3">
+            <label id="labelNome" class="labelNome" for="inputNome">Nome</label>
             <input id="inputNome" ng-model="data.nome" ng-pattern="/^[a-zA-ZáéíóúÁÉÍÓÚ\s]*$/" ng-minlength="3" name="inputNome" type="text" required>
-            <label class="labelIdade " for="inputIdade">Idade</label>
-            <input  id="inputIdade"  ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
-            <label  class="labelProfissao" for="selectProfissao">Profissao</label>
+            </div>
+            
+            
+            <div class="col">
+                <label id="labelIdade" class="labelIdade " for="inputIdade">Idade</label>
+                <input  id="inputIdade"  ng-pattern="/^\d+$/" ng-model="data.idade" name="inputIdade" type="text" required>
+            
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col col-sm-3">
+            <label  id="labelProfissao" class="labelProfissao" for="selectProfissao">Profissao</label>
             <select ng-options="listagemdepessoas for listagemdepessoas in definindoProfiss" id="selectProfissao" ng-model="data.profissao" required>
             </select>
-            <label  class="labelNascimento">Cidade de Nascimento</label>
+            </div>
+
+            <div class="col">
+            <label id="labelNascimento" class="labelNascimento">Cidade de Nascimento</label>
             <select ng-options="listagemdecidades for listagemdecidades in megaCity" ng-model="data.nascimento" required>
             </select>
-            <label class="labelPeso" for="inputPeso">Peso</label>
+             </div>  
+            </div>
+
+            <div class="row">
+            <div class="col col-sm-3">
+            <label  id="labelPeso" class="labelPeso" for="inputPeso">Peso</label>
             <input id="inputPeso" ng-model="data.peso" name="inputPeso" type="text" required>
-            <label   class="labelAniversario" for="selectDataAniversario">Aniversário</label>
+            </div>
+            <div class="col">
+            <label  id="labelAniversario" class="labelAniversario" for="selectDataAniversario">Aniversário</label>
             <input id="selectDataAniversario" ng-model="data.aniversario" type="date" required>
+            </div>
+            </div>
             <button class="btn" id="botaoCadastroSalvar" type="button" ng-click="enviodedados()" ng-disabled="customerForm.$invalid" id="botaoCadastrosalvar"
                 onclick="location.href=document.referrer">Salvar</button>
             <button class="btn" id="botaoCadastroVoltar" onclick="location.href=document.referrer">Voltar</button>

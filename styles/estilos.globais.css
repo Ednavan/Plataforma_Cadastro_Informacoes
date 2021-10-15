@@ -1,6 +1,6 @@
  *{
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
  }
 
 #tituloHeader{
@@ -13,7 +13,7 @@
   
   }
 
-.labelNome{
+/* .labelNome{
 
 }
  #inputNome{
@@ -34,11 +34,6 @@
  
 }
 
-#inputIdade {
-
-  
-}
-
 .labelProfissao{
     display: block;
  
@@ -53,4 +48,12 @@
 .labelPeso{
   display: block;
 }
+ */
 
+#labelNome, #labelIdade, #labelProfissao, #labelNascimento, #labelPeso, #labelAniversario{
+  display: block;
+}
+
+#FormeCadastro{
+  margin: 10%;
+}
