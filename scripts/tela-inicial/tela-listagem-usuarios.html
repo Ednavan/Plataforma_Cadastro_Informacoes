@@ -76,7 +76,7 @@
       </table>
     </form>
   </main>
-  <div id="modalexcluirUsuario" class="modal" tabindex="-1" role="dialog">
+  <div id="modalexcluirUsuario"  class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -85,9 +85,9 @@
             A ação não poderá ser desfeita
           </h6>
         </div>
-        <div class="footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" ng-click="analisa(lista)">Excluir</button>
+        <div class="container">
+          <button id="botaoCancelamento" type="button" class="btn btn-secondary item" data-dismiss="modal"  onclick="location.href=document.referrer">Cancelar</button>
+          <button id="botaoExcluir" type="button" class="btn btn-primary item" ng-click="excluirDefinitivo(lista)">Excluir</button>
         </div>
       </div>
     </div>

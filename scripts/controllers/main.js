@@ -24,20 +24,22 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
 
 
 
-
+    /**
+     * 
+     * @param {*} alterando responsável por fazer a edição 
+     */
     $scope.alterando = function (lista) {
         $scope.verifica = lista;
         console.log('edit', $scope.verifica);
         // localStorage.setItem('test', JSON.stringify($scope.verifica))
       
-
     }
 
     $scope.deletandodados = function(lista){
         $scope.verifica = lista;
         console.log('edit', $scope.verifica);
     
-    $scope.analisa = function (){
+    $scope.excluirDefinitivo = function (){
         $http({
             url:'http://localhost:3000/listagemUsuarios/' + $scope.verifica.id,
             method: 'DELETE',
@@ -48,36 +50,6 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
         })
       
     }}
-
-    // $scope.finalizandoEdit = function () {
-
-    //     console.log('edit2', $scope.verifica)
-    //     var ok = localStorage.getItem('test');
-    //     console.log(ok)
-
-    //     ok = JSON.parse(ok);
-
-
-    // }
-    // $scope.enviardados = function () {
-    //         console.log('executando dentro da funcao enviardados', $scope.ok)
-    //         $http({
-    //             url: "http://localhost:3000/listagemUsuarios" + $scope.ok.id, //seleciona o dados atraves do id
-    //             data: $scope.ok, //envia os dados atraves do seu conjunto    
-    //             method: "PATCH", //é mais importante é responsável pela ação do método
-
-    //         }).then(function (tratamento) {
-    //             console.log("SUCCESS");
-    //             console.log(tratamento)
-
-
-    //         }).catch(function () {
-    //             console.log("chegou aqui");
-
-    //         })
-
-
-    // }
 
 
     $.ajax({

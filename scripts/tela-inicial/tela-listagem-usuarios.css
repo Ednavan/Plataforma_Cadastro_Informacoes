@@ -104,3 +104,37 @@ display: list-item;
   background:#4F4F4F;
   color: #FFFAFA ;
 }
+
+#modalexcluirUsuario .modal-title{
+  text-align: center;
+  padding-left: 50px;
+}
+
+#modalexcluirUsuario .footer{
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+#botaoCancelamento, #botaoExcluir {
+  background: #8B008B;
+  
+}
+
+.container{
+
+  grid-template-columns: auto auto auto auto ;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 40px
+  
+}
+
+#botaoExcluir{
+  position: relative;
+  width: 80px;
+  left:24%;
+  margin: auto ;
+  
+
+
+}
