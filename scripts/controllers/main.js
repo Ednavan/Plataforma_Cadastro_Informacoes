@@ -24,16 +24,39 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
 
 
 
-    /**
-     * 
-     * @param {*} alterando responsável por fazer a edição 
-     */
-    $scope.alterando = function (lista) {
-        $scope.verifica = lista;
-        console.log('edit', $scope.verifica);
-        // localStorage.setItem('test', JSON.stringify($scope.verifica))
-      
-    }
+        $scope.alterando = function (lista) {
+            $scope.verifica = lista;
+            console.log('edit', $scope.verifica);
+            localStorage.setItem('test', JSON.stringify($scope.verifica))
+        }
+        
+    $scope.finalizandoEdit = function () {
+    
+            console.log('edit2', $scope.verifica)
+            var ok = localStorage.getItem('test');
+            console.log(ok)
+    
+            ok = JSON.parse(ok)
+        }
+
+        $scope.fezalteracao = function () {
+                console.log('executando dentro da funcao enviardados', $scope.ok)
+                $http({
+                    url: "http://localhost:3000/listagemUsuarios/" + $scope.ok.id, //seleciona o dados atraves do id
+                    data: $scope.ok, //envia os dados atraves do seu conjunto    
+                    method: "PATCH", //é mais importante é responsável pela ação do método
+    
+                }).then(function (tratamento) {
+                    console.log("SUCCESS");
+                    console.log(tratamento)
+    
+                }).catch(function () {
+                    console.log("chegou aqui");
+    
+                })
+    
+        }
+    
 
     $scope.deletandodados = function(lista){
         $scope.verifica = lista;
@@ -78,21 +101,3 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
 
 });
 
-// function validardataNascimento(data){
-//     dataAtual = new Date();
-//     data=new Date(data);
-
-//     if(data < dataAtual){
-//         console.log("Data válida");
-//         return true;
-//     }else{
-//         console.log("Data Inválida");
-//         return false;
-//     }
-// }
-
-function validadata(){
-    if('#inputIdade' < 1){
-        window
-    }
-}
