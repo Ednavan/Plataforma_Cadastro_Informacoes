@@ -5,14 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="stylesheet" href="tela-listagem-usuarios.css">
-    
   <link rel="stylesheet" href="../../scripts/tela-cadastro/tela-cadastro-usuarios.css">
   <!--Chamando Angularjs:-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-  <!-- <script src="node_modules/angularjs-currency-input-mask/dist/angularjs-currency-input-mask.min.js"></script> -->
   <script src="../controllers/jquery.mask.js"></script>
   <script src="../../scripts/controllers/main.js"></script>
   <!--Chamando o Bootstrap-->
@@ -32,10 +29,17 @@
       <h3>Só Vamu Tech!</h3>
     </div>
   </header>
-  <button onclick='window.open("../../scripts/tela-cadastro/tela-cadastro-usuarios.html")'><a
+  <nav>
+    <button id="cadastroInfo" class="btn btn-primary" onclick='window.open("../../scripts/tela-cadastro/tela-cadastro-usuarios.html")'><a
       href="../../scripts/tela-cadastro/tela-cadastro-usuarios.html"></a>Cadastrar</button>
+
+      <div>
+        <input id="barraPesquisa" class="form-control" type="search" aria-label="Search">
+        <i class="fa fa-search"></i>
+      </div>
+  </nav>
   <main>
-    <form>
+    <form id="preenchimentoTabela">
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
@@ -57,12 +61,12 @@
             <td>{{lista.peso}}</td>
             <td>{{lista.aniversario | date:'dd/MM/yyyy'}}</td>
             <td>
-              <button type="button" onclick='window.open("../../scripts/tela-editar/tela-editando-usuarios.html")'
+              <button id="editarInfo" class="btn btn-primary" type="button" onclick='window.open("../../scripts/tela-editar/tela-editando-usuarios.html")'
                 ng-click="alterando(lista)">
                 <a href="../../scripts/tela-editar/tela-editando-usuarios.html"></a>
                 Editar  
               </button>
-              <button data-bs-toggle="modal" data-bs-target="#modalexcluirUsuario">
+              <button id="apagarInfo" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalexcluirUsuario">
                 apagar
               </button>
             </td>
@@ -70,9 +74,7 @@
         </tbody>
       </table>
     </form>
-
   </main>
-
   <div id="modalexcluirUsuario" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -90,5 +92,4 @@
     </div>
   </div>
 </body>
-
 </html>

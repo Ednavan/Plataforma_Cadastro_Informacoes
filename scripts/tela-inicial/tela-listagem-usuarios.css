@@ -44,11 +44,50 @@ display: list-item;
     scroll-behavior: smooth;
 } */
 
+#tituloHeader{
+  background: #8B008B;
+  color: #FFFAFA;
+  padding: 8px;
+  height: 60px ;
+  margin-bottom: 5%;
+
+}
 .modal-title {
   text-align: center;
   padding-left: 50px;
+ 
 }
 
 #modalexcluirUsuario{
   margin-top: 150px;
+}
+
+#barraPesquisa  {
+  position: absolute;
+  margin-bottom: 200px;
+  left: 45px;
+  height: 35px;
+  max-width: 450px;
+  border-radius: 80px;
+}
+
+.fa{
+  position: relative;
+  left: 50px;
+  margin-bottom: 5px;
+  
+}
+
+#cadastroInfo{
+  background: #8B008B;
+  position: absolute;
+  left: 90%;
+}
+
+#editarInfo , #apagarInfo{
+  background: #8B008B;
+}
+
+#preenchimentoTabela{
+  margin: 50px;
 }
