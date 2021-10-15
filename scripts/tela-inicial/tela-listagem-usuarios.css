@@ -69,14 +69,20 @@ display: list-item;
   height: 35px;
   max-width: 450px;
   border-radius: 80px;
+  border: solid 1px #8B008B ;
+  padding-left: 25px;
 }
 
 .fa{
-  position: relative;
+
   left: 50px;
+  position: relative;
   margin-bottom: 5px;
   
+ 
+  
 }
+
 
 #cadastroInfo{
   background: #8B008B;
