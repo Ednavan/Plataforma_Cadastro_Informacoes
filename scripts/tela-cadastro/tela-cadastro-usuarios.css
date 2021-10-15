@@ -2,3 +2,9 @@
     background:  #8B008B;
     color: #FFF;
 }
+
+#footerCadastro{
+    position: absolute;
+    bottom: 80px;
+    left: 82%;
+}
