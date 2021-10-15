@@ -78,4 +78,21 @@ angular.module("aplicacaoRun", []).controller("controleUsuarios", function ($sco
 
 });
 
+// function validardataNascimento(data){
+//     dataAtual = new Date();
+//     data=new Date(data);
 
+//     if(data < dataAtual){
+//         console.log("Data válida");
+//         return true;
+//     }else{
+//         console.log("Data Inválida");
+//         return false;
+//     }
+// }
+
+function validadata(){
+    if('#inputIdade' < 1){
+        window
+    }
+}
